@@ -9,7 +9,6 @@ chrome.runtime.sendMessage(
 
             if (videoElement?.src !== previousVideoSrc) {
                 previousVideoSrc = videoElement.src;
-                // window.open(previousVideoSrc, '_blank');
 
                 const container = document.createElement('div');
                 container.style.position = 'fixed';
