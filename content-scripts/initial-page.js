@@ -30,6 +30,7 @@ chrome.runtime.sendMessage(
                 video.autoplay = true;
                 video.style.width = '100%';
                 video.style.borderRadius = '10px';
+                video.style.maxWidth = '80vw';
 
                 const answersContainer = document.createElement('div');
                 answersContainer.style.display = 'flex';
