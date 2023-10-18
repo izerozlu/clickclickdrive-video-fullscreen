@@ -16,15 +16,6 @@
       "js": [
         "content-scripts/initial-page.js"
       ]
-    },
-    {
-      "matches": [
-        "https://storage.googleapis.com/*"
-      ],
-      "js": [
-        "content-scripts/video-page.js"
-      ]
     }
-
   ]
 }
