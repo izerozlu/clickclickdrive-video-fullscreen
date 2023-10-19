@@ -19,8 +19,12 @@ const openDialog = (videoElement, previousVideoSrc) => {
     answersContainer.classList.add('answers-container');
 
     Array.from(document.querySelectorAll('form li')).forEach((answer) => {
+        const isAnswerSelected = !!answer.querySelector('svg');
         const button = document.createElement('button');
         button.classList.add('answer');
+        if (isAnswerSelected) {
+            button.classList.add('selected');
+        }
         button.textContent = answer.textContent;
         button.addEventListener('click', () => {
             answer.querySelector('label').dispatchEvent(new MouseEvent('click'));
