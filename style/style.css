@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px max(calc(50% - 600px), 20px);
     gap: 32px;
     backdrop-filter: blur(10px);
     color: rgb(53, 67, 84);
@@ -22,9 +22,10 @@
 
 /* Styling for the video element */
 .video {
-    width: 100%;
     border-radius: 10px;
     max-width: 80vw;
+    max-height: 600px;
+    height: 100%;
     box-shadow: 0.6px 1.4px 6.1px rgba(0, 0, 0, 0.044),
     1.3px 3.3px 14.7px rgba(0, 0, 0, 0.071),
     2.5px 6.1px 27.7px rgba(0, 0, 0, 0.096),
