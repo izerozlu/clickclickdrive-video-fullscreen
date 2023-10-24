@@ -2,9 +2,6 @@
   "manifest_version": 3,
   "name": "ClickClickDrive Video Fullscreen",
   "version": "0.0.4",
-  "permissions": [
-    "activeTab"
-  ],
   "background": {
     "service_worker": "background/load-trigger.js"
   },

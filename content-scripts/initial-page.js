@@ -68,9 +68,10 @@ chrome.runtime.sendMessage(
         setInterval(() => {
             const videoElement = document.querySelector('video');
             if (videoElement && videoElement.src !== previousVideoSrc()) {
+                // TODO [izerozlu] video could be the same one, but still need to add the event listener
                 videoElement?.addEventListener('click', () => openDialog(videoElement, previousVideoSrc))
             }
-            if (videoElement?.src !== previousVideoSrc()) {
+            if (videoElement && videoElement.src !== previousVideoSrc()) {
                 openDialog(videoElement, previousVideoSrc);
             }
         }, 1000);
